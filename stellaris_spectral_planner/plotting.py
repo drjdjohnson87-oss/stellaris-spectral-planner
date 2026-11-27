@@ -224,9 +224,8 @@ def make_emission_harmonic_figure(
     for _, low, high in tune_windows or []:
         bounds.extend([low, high])
 
-    x0 = 375
-    x1 = min(900, max(bounds) + 20)
-
+    x0 = 380
+    x1 = 800
     fig.update_layout(
         height=390,
         xaxis_title="Detected wavelength (nm)",
